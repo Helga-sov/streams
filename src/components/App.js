@@ -12,22 +12,20 @@ import history from "../history";
 const App = () => {
 	return (
 		<div className="ui container">
-			<Router history={history}>
+			<Router location={history.location} navigator={history}>
 				<div>
 					<Header />
-					<BrowserRouter>
-						<Routes>
-							<Route path="/" element={<StreamList />}>
-								<Route index element={<StreamList />} />
-								<Route path="streams">
-									<Route path="new" element={<StreamCreate />} />
-									<Route path="edit/:id" element={<StreamEdit />} />
-									<Route path="delete/:id" element={<StreamDelete />} />
-									<Route path=":id" element={<StreamShow />} />
-								</Route>
+					<Routes>
+						<Route path="/" element={<StreamList />}>
+							<Route index element={<StreamList />} />
+							<Route path="streams">
+								<Route path="new" element={<StreamCreate />} />
+								<Route path="edit/:id" element={<StreamEdit />} />
+								<Route path="delete/:id" element={<StreamDelete />} />
+								<Route path=":id" element={<StreamShow />} />
 							</Route>
-						</Routes>
-					</BrowserRouter>
+						</Route>
+					</Routes>
 				</div>
 			</Router>
 		</div>
