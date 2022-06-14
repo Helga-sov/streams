@@ -131,21 +131,6 @@ body .ui.list > .item > i.icon {
 .item:nth-child(21) i {
 	background: url("./21.jpg");
 }
-.item:nth-child(22) i {
-	background: url("./22.jpg");
-}
-.item:nth-child(23) i {
-	background: url("./23.jpg");
-}
-.item:nth-child(24) i {
-	background: url("./24.jpg");
-}
-.item:nth-child(25) i {
-	background: url("./25.jpg");
-}
-.item:nth-child(26) i {
-	background: url("./26.jpg");
-}
 
 #root > div > div > div.ui.secondary.pointing.menu > a {
 	font-family: pixeboy;
