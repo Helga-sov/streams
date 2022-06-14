@@ -1,16 +1,11 @@
-@font-face {
+/* @font-face {
 	font-family: "silkscreen";
 	src: local("silkscreen"), url(./slkscr.ttf) format("truetype");
-}
+} */
 @font-face {
 	font-family: "pixeboy";
 	src: local("pixeboy"), url(./pixeboy.ttf) format("truetype");
 }
-
-/* iframe {
-	height: 10px !important;
-	width: 10px !important;
-} */
 
 .right.menu {
 	display: flex;
@@ -136,6 +131,21 @@ body .ui.list > .item > i.icon {
 .item:nth-child(21) i {
 	background: url("./21.jpg");
 }
+.item:nth-child(22) i {
+	background: url("./22.jpg");
+}
+.item:nth-child(23) i {
+	background: url("./23.jpg");
+}
+.item:nth-child(24) i {
+	background: url("./24.jpg");
+}
+.item:nth-child(25) i {
+	background: url("./25.jpg");
+}
+.item:nth-child(26) i {
+	background: url("./26.jpg");
+}
 
 #root > div > div > div.ui.secondary.pointing.menu > a {
 	font-family: pixeboy;
@@ -175,13 +185,10 @@ body .ui.list > .item > i.icon {
 	font-size: 12px;
 }
 
-div.ui.celled.list div > a {
-}
-
 body .ui.list > .item .description {
-	font-family: silkscreen;
-	font-size: 12px;
-	color: #606060 !important;
+	font-family: Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #000 !important;
 	text-shadow: -1px -1px 2px #ffcbe2;
 	filter: drop-shadow(1px 1px 2px #b4f3e6);
 }
@@ -198,26 +205,4 @@ video {
 	width: 100%;
 	height: 400px;
 	opacity: 0.7;
-}
-
-.streamer {
-	position: relative;
-	height: 320px;
-	background: url("./streamer.jpeg") no-repeat;
-	background-size: cover;
-	background-position: 0 -85px;
-}
-
-.streamer i {
-	position: absolute;
-	color: white;
-	z-index: 300;
-	top: 48%;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	height: 100%;
-	display: block;
-	width: 100%;
-	font-size: 30px;
 }
